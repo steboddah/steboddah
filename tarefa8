@@ -1,0 +1,23 @@
+using System;
+
+using System.Collections.Generic;
+
+namespaceCourse{
+classProgram{
+
+public doublePi= 3.14; //DECLARANDO E EXPONSO O VALOR DE PI
+public voidMain(string[] args) 
+{
+Calculadora calc =new Calculadora(); //DECLARANDO E CRIANDO UM NOVO PROJETO
+
+Console.WriteLine(“Entre com valor do raio: ”); //ENTRANDO COM O VALOR DO RAIO 
+double raio = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture); //ARMAZENANDO O VALOR DEPOSITADO
+
+double circ= calc.Circuferencia(raio);//TRAZENDO O VALOR DA CIRCUFERENCIA DA CLASSE CALCULADOR USANDO O OBJETO CAL PARA TER ACESSO A ELE
+double volume = calc.Volume(raio);//TRAZENDO O VALOR DO VOLUME DA CLASSE CALCULADORA USANDO O OBJETO CAL PARA TER ACESSO A ELE
+
+Console.WriteLine(“Circuferência: ” + circ.ToString(“F2”, CultureInfo.InvariantCulture));//CALCULANDO E EXIBINDO O VALOR DA CIRCUFERENCIA
+Console.WriteLine(“Volume: ” + volume.ToString(“F2”, CultureInfo.InvariantCulture));//CALCULANDO E EXIBINDO O VALOR DO VOLUME
+Console.WriteLine(“Valor de PI: ” + calc.Pi.ToString(“F2”, CultureInfo.InvariantCulture));} //CALCULANDO E EXIBINDOO VALOR DO PI
+}}
+}
