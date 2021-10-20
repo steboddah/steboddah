@@ -1,10 +1,28 @@
-- 👋 Hi, I’m @steboddah
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-<!---
-steboddah/steboddah is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+namespace Herança
+{
+    class conta2 : Conta
+    {
+       
+        public double EmprestimoLimite { get; set; } //Declarando as variáveis com o encapsulamento
+       
+        public conta2() { } //construtor padrão
+      
+        public conta2(int numero, string titular, double saldo, double emprestimoLimite) : base(numero, titular, saldo)
+        {
+            EmprestimoLimite = emprestimoLimite;
+        }
+        public void Emprestimo(double saldoTotal)
+        {
+            if (saldoTotal <= EmprestimoLimite)
+            {
+                Saldo += saldoTotal;
+            }
+        }
+    }
+}
