@@ -10,9 +10,9 @@ namespace matriz2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Digite o número de linhas da matriz: ");
+            Console.WriteLine("Digite o numero de linhas da matriz: ");
             int l = int.Parse(Console.ReadLine());
-            Console.WriteLine("Digite o número de colunas da matriz: ");
+            Console.WriteLine("Digite o numero de colunas da matriz: ");
             int c = int.Parse(Console.ReadLine());
             int[,] mat = new int[l, c];
 
